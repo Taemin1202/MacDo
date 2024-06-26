@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        a{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul, li, ol{
+            list-style: none;
+        }
+
+        h1{
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        ul{
+            text-align: center;
+        }
+
+        ul li{
+            display: inline-block;
+            border: 1px solid navy;
+        }
+
+        ul li a{
+            display: block;
+            padding: 10px 20;
+            border: 1px solid salmon;
+        }
+
+        ul li a::before{
+            content: "★";
+            color: yellow;
+            font-size: 50px;
+        }
+
+        ul li a::after{
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background: url("img/10002.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        ul li::before{
+            content: "";
+            display: inline-block;
+            width: 10px;
+            height: 1px;
+            background-color: aqua;
+        }
+
+        ul li::after{
+            content: "";
+            display: block;
+            width: 1px;
+            height: 10px;
+            background-color: darkcyan;
+            margin: 0 auto;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>가상클래스 만들기</h1>
+
+    <ul>
+        <li><a href="#">menu1</a></li>
+        <li><a href="#">menu2</a></li>
+        <li><a href="#">menu3</a></li>
+        <li><a href="#">menu4</a></li>
+        <li><a href="#">menu5</a></li>
+    </ul>
+</body>
+
+</html>
